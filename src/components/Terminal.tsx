@@ -24,7 +24,7 @@ cls`,
 - Email: muhammetemiraslan0@gmail.com
 - Telefon: +90 555 555 5555`,
 
-  restricted: () => "Erişim reddedildi: İzniniz yok", // Uyarı
+  restricted: () => "Erişim reddedildi: İzniniz yok",
 
   ls: (currentDir = "") => {
     if (currentDir.endsWith("projects")) {
@@ -113,7 +113,6 @@ export default function Terminal() {
     const trimmedInput = input.trim();
     const output = handleCommand(trimmedInput);
 
-    // cls veya cd sonrası sadece input temizlenir
     if (
       trimmedInput.toLowerCase() === "cls" ||
       trimmedInput.toLowerCase().startsWith("cd")
@@ -138,7 +137,6 @@ export default function Terminal() {
         overflow: "hidden",
       }}
     >
-      {/* Header */}
       <div
         style={{
           backgroundColor: "#1e1e1e",
@@ -189,7 +187,6 @@ export default function Terminal() {
         </div>
       </div>
 
-      {/* Terminal Body */}
       <div
         style={{
           flex: 1,

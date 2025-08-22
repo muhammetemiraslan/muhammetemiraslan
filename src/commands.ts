@@ -20,7 +20,7 @@ cls`,
 - Telefon: +90 555 555 5555`,
 
   restricted: () =>
-    "Erişim reddedildi: İzniniz yok", // uyarı veriyor
+    "Erişim reddedildi: İzniniz yok",
 
   ls: (currentDir = "") => {
     const dir = currentDir || "";
